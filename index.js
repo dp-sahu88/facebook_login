@@ -1,4 +1,4 @@
-document.querySelector('.fb-login-button').addEventListener('click', () => {
+
   window.fbAsyncInit = function() {
     FB.init({
       appId            : '184538382745930',
@@ -24,5 +24,5 @@ document.querySelector('.fb-login-button').addEventListener('click', () => {
       }
     });
   };
-});
+
 
