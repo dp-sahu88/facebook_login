@@ -1,11 +1,5 @@
 
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '550687768052667',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v3.2'
-    });
+  checkLoginStatus = function() {
     FB.getLoginStatus(function(response) {
       if (response.status === 'connected') {
         console.log('User is logged in.');
@@ -25,4 +19,4 @@
     });
   };
 
-
+  document.getElementById('show-credentials').addEventListener('click', checkLoginStatus);
